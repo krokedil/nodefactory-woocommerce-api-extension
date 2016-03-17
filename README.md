@@ -6,3 +6,10 @@ To be able to send the *transaction number* from the payment service provider to
 This can be accomplished by a payment module when the orderstatus of an order in WooCommerce is set to *Processing* (upon payment of the order): 
 
 $order->payment_complete( $psp_transaction_number );
+
+## Supported payment gateway extensions
+The following payment gateways are supported and doesn't need any modification or updates.
+- [WooCommerce Klarna Gateway] (https://www.woothemes.com/products/klarna/) (v2.0+)
+- [WooCommerce DIBS Gateway] (https://www.woothemes.com/products/klarna/) (D2 platform)
+- [WooCommerce DIBS Account] (https://krokedil.se/produkt/dibs-account/)
+- [DIBS D2 MasterPass Gateway for WooCommerce] (https://krokedil.se/produkt/dibs-d2-masterpass/)
