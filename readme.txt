@@ -4,6 +4,8 @@ Tags: WooCommerce, API, NodeFactory, Krokedil, transaction, payment
 Requires at least: 4.2
 Tested up to: 4.4.2
 Stable tag: 1.0
+License: GPL2+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Extends WooCommerce API with various information used by NodeFactory’s integration products Sharespine and Plugboard.
 
