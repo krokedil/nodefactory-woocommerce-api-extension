@@ -20,19 +20,23 @@ Includes payment gateway transaction number (stored as _transaction_id in an ord
 1. That's it
 
 == Frequently Asked Questions ==
-**Does this plugin automatically add the PSP's transaction number to the WooCommerce API view order endpoint?**
-To be able to send the *transaction number* from the payment service provider to [Sharespine] (https://www.sharespine.com/) & [Plugboard] (http://plugboard.io/) (in a view order API request - https://woothemes.github.io/woocommerce-rest-api-docs/#view-an-order), the transaction number needs to be stored in the order as a Post Meta field with the name *_transaction_id*. 
+
+= Does this plugin automatically add the PSP's transaction number to the WooCommerce API view order endpoint? =
+
+To be able to send the *transaction number* from the payment service provider to [Sharespine](https://www.sharespine.com/) & [Plugboard](http://plugboard.io/) (in a view order API request - https://woothemes.github.io/woocommerce-rest-api-docs/#view-an-order), the transaction number needs to be stored in the order as a Post Meta field with the name *_transaction_id*. 
 
 This can be accomplished by a payment module when the order status of an order in WooCommerce is set to *Processing* (upon payment of the order) like this: 
 
-```$order->payment_complete( $psp_transaction_number );```
+`$order->payment_complete( $psp_transaction_number );`
 
-**Are there any payment gateways that support this already?**
+= Are there any payment gateways that support this already? =
+
 The following payment gateways are supported and doesn't need any modification or updates.
-- [WooCommerce Klarna Gateway] (https://www.woothemes.com/products/klarna/) (v2.0+)
-- [WooCommerce DIBS Gateway] (https://www.woothemes.com/products/klarna/) (D2 platform)
-- [WooCommerce DIBS Account] (https://krokedil.se/produkt/dibs-account/)
-- [DIBS D2 MasterPass Gateway for WooCommerce] (https://krokedil.se/produkt/dibs-d2-masterpass/)
+
+* [WooCommerce Klarna Gateway](https://www.woothemes.com/products/klarna/) (v2.0+)
+* [WooCommerce DIBS Gateway](https://www.woothemes.com/products/klarna/) (D2 platform)
+* [WooCommerce DIBS Account](https://krokedil.se/produkt/dibs-account/)
+* [DIBS D2 MasterPass Gateway for WooCommerce](https://krokedil.se/produkt/dibs-d2-masterpass/)
 
 == Changelog ==
 
